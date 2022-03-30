@@ -4,6 +4,7 @@
     height: min-content;
     width: 100%;
     display: flex;
+    position: relative;
     justify-content: center;
     background: $blackColor;
     .home-container{
@@ -40,6 +41,20 @@
                 text-align: center;
                 font-size: $fontDescriptionSize;
                 color: $whiteColor;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+    .home-section{
+        .home-container{
+            .home-header{
+                text-align: center;
+                .home-title{
+                    flex-direction: column;
+                }
             }
         }
     }

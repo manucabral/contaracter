@@ -25,6 +25,7 @@ html body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  background-color: #070707;
 }
 
 html body #root {
@@ -40,14 +41,78 @@ html body .app {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  overflow-x: hidden;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   font-family: 'SansArabic';
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 html body .app .body {
-  height: 100vh;
+  height: 100%;
   background: #070707;
+}
+
+.footer-section {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 100%;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-section .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.footer-section .footer-container .footer__title {
+  font-family: 'SansArabic';
+  font-size: 19px;
+  color: #24272B;
+}
+
+.footer-section .footer-container .footer__subtitle {
+  font-family: 'SansArabic';
+  font-size: 19px;
+  color: #24272B;
+}
+
+.footer-section .footer-container .footer__link {
+  font-family: 'SansArabic';
+  font-size: 19px;
+  color: #5C7AFF;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.footer-section .footer-container .footer__link:hover {
+  color: #96C5B0;
 }
 
 .home-section {
@@ -60,6 +125,7 @@ html body .app .body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -134,6 +200,18 @@ html body .app .body {
   color: #C4D6B0;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .home-section .home-container .home-header {
+    text-align: center;
+  }
+  .home-section .home-container .home-header .home-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .tool-section {
   width: 100%;
   height: -webkit-min-content;
@@ -152,6 +230,7 @@ html body .app .body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .tool-section .tool-container {
@@ -168,7 +247,8 @@ html body .app .body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   height: 100%;
 }
 
@@ -198,7 +278,7 @@ html body .app .body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .tool-section .tool-container .tool-left .tool-left-title .tool-left-title__text {
@@ -221,6 +301,21 @@ html body .app .body {
   color: white;
   font-family: 'SansArabic';
   font-size: 24px;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-color: #C4D6B0;
+}
+
+.tool-section .tool-container .tool-left .tool-left__textarea:hover {
+  cursor: pointer;
+}
+
+.tool-section .tool-container .tool-left .tool-left__textarea:focus {
+  cursor: text;
+  border-color: #5C7AFF;
 }
 
 .tool-section .tool-container .tool-right {
@@ -268,6 +363,10 @@ html body .app .body {
   gap: 10px;
 }
 
+.tool-section .tool-container .tool-right .tool-list .tool-list__item .tool-item__num {
+  color: #96C5B0;
+}
+
 .tool-section .tool-container .tool-right .tool-list .tool-list__item .tool-item__text {
   font-family: 'SansArabic';
   font-size: 24px;
@@ -276,5 +375,45 @@ html body .app .body {
 .tool-section .tool-container .tool-right .tool-list .tool-list__item .tool-item__icon {
   width: 48px;
   height: 48px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .tool-section .tool-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tool-section .tool-container .tool-left {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tool-section .tool-container .tool-left .tool-left-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 0;
+  }
+  .tool-section .tool-container .tool-left .tool-left-title .tool-left-title__text {
+    font-size: 24px;
+  }
+  .tool-section .tool-container .tool-left .tool-left__textarea {
+    width: 80%;
+    height: 50%;
+  }
+  .tool-section .tool-container .tool-right .tool-list {
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=index.css.map */

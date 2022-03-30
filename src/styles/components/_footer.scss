@@ -1,0 +1,38 @@
+.footer-section{
+    height: min-content;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: $maxSectionWidth;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        .footer__title{
+            font-family: 'SansArabic';
+            font-size: $fontDescriptionSize - 5;
+            color: $grayColor;
+        }
+        .footer__subtitle{
+            font-family: 'SansArabic';
+            font-size: $fontDescriptionSize - 5;
+            color: $grayColor;
+        }
+        .footer__link{
+            font-family: 'SansArabic';
+            font-size: $fontDescriptionSize - 5;
+            color: $primaryColor;
+            text-decoration: none;
+            padding: 0 5px;
+            &:hover{
+                color: $secondaryColor;
+            }
+        }
+    }
+}

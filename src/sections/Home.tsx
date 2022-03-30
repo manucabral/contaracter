@@ -1,4 +1,3 @@
-import typing from "../assets/typing.svg";
 import counter from "../assets/counter.svg";
 
 export default function Home() {
@@ -8,14 +7,13 @@ export default function Home() {
         <div className="home-header">
           <div className="home-title">
             <h1 className="home-title__text">
-              {" "}
-              Contador de caracteres y palabras{" "}
+              Contador de caracteres y palabras
             </h1>
-            <img className="home-title__icon" src={counter} alt="typing" />
+            <img className="home-title__icon" src={counter} alt="counter" />
           </div>
           <p className="home__description">
-            Perfecto y util para tus comentarios en Twiiter o otras aplicaciones
-            donde tienen un limite máximo de caracteres.
+            Perfecto y útil para tus comentarios en Twitter o en otras aplicaciones
+            donde tienen un limite máximo de caracteres ya sea para un título o para un comentario.
           </p>
         </div>
       </div>
