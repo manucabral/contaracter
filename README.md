@@ -1,2 +1,6 @@
-# contaracter
-Simple contador de caracteres y palabras hecho con React y Vite
+# Contaracter :speech_balloon:
+Simple página web contador de palabras y letras. 
+
+## Proximas implementaciones
+- [ ] Contador de oraciones
+- [ ] Contador de párrafos
