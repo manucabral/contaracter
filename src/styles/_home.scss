@@ -1,0 +1,46 @@
+.home-section{
+    margin: 0;
+    padding: 0;
+    height: min-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: $blackColor;
+    .home-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: $maxSectionWidth;
+        .home-header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            .home-title{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                .home-title__text{
+                    font-family: 'SansArabic-semibold';
+                    font-size: $fontTitleSize;
+                    font-weight: bold;
+                    color: $primaryColor;
+                }
+                .home-title__icon{
+                    height: $fontTitleSize;
+                    width: $fontTitleSize;
+                } 
+            }
+            .home__description{
+                width: 60%;
+                text-align: center;
+                font-size: $fontDescriptionSize;
+                color: $whiteColor;
+            }
+        }
+    }
+}

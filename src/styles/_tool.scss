@@ -1,0 +1,80 @@
+.tool-section{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .tool-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: $maxSectionWidth;
+        height: 100%;
+        .tool-left{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            .tool-left-title{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                .tool-left-title__text{
+                    font-family: 'SansArabic';
+                    font-size: $fontSubtitleSize;
+                    font-weight: bold;
+                    text-align: left;
+                    color: $secondaryColor;
+                }
+                .tool-left-title__icon{
+                    width: $fontSubtitleSize;
+                    height: $fontSubtitleSize;
+                }
+            }
+            .tool-left__textarea{
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+                color: white;
+                font-family: 'SansArabic';
+                font-size: $fontDescriptionSize;
+            }
+        }
+        .tool-right{
+            height: 100%;
+            width: 100%;
+            flex-shrink: 8;
+            .tool-list{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                color: $whiteColor;
+                list-style: none;
+                text-align: left;
+                width: 100%;
+                height: 100%;
+                .tool-list__item{
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 10px;
+                    .tool-item__text{
+                        font-family: 'SansArabic';
+                        font-size: $fontDescriptionSize;
+                    }
+                    .tool-item__icon{
+                        width: $fontTitleSize;
+                        height: $fontTitleSize;
+                    }
+                }
+            }
+        }
+
+    }
+}
