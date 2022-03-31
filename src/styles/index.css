@@ -25,7 +25,7 @@ html body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  background-color: #070707;
+  background-color: #0E1116;
 }
 
 html body #root {
@@ -43,7 +43,7 @@ html body .app {
   position: relative;
   overflow-x: hidden;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   font-family: 'SansArabic';
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -51,7 +51,7 @@ html body .app {
 
 html body .app .body {
   height: 100%;
-  background: #070707;
+  background: #0E1116;
 }
 
 .footer-section {
@@ -86,7 +86,7 @@ html body .app .body {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 1200px;
-  width: 100%;
+  width: 80%;
   height: 100%;
   text-align: center;
 }
@@ -94,13 +94,13 @@ html body .app .body {
 .footer-section .footer-container .footer__title {
   font-family: 'SansArabic';
   font-size: 19px;
-  color: #24272B;
+  color: #3c3c3c;
 }
 
 .footer-section .footer-container .footer__subtitle {
   font-family: 'SansArabic';
   font-size: 19px;
-  color: #24272B;
+  color: #3c3c3c;
 }
 
 .footer-section .footer-container .footer__link {
@@ -112,7 +112,7 @@ html body .app .body {
 }
 
 .footer-section .footer-container .footer__link:hover {
-  color: #96C5B0;
+  color: #AFCBFF;
 }
 
 .home-section {
@@ -129,7 +129,7 @@ html body .app .body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #070707;
+  background: #0E1116;
 }
 
 .home-section .home-container {
@@ -197,7 +197,7 @@ html body .app .body {
   width: 60%;
   text-align: center;
   font-size: 24px;
-  color: #C4D6B0;
+  color: #DDDDDD;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1200px) {
@@ -261,7 +261,7 @@ html body .app .body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  width: 100%;
+  width: 1000px;
 }
 
 .tool-section .tool-container .tool-left .tool-left-title {
@@ -286,7 +286,7 @@ html body .app .body {
   font-size: 32px;
   font-weight: bold;
   text-align: left;
-  color: #96C5B0;
+  color: #AFCBFF;
 }
 
 .tool-section .tool-container .tool-left .tool-left-title .tool-left-title__icon {
@@ -296,7 +296,6 @@ html body .app .body {
 
 .tool-section .tool-container .tool-left .tool-left__textarea {
   width: 100%;
-  height: 100%;
   background-color: transparent;
   color: white;
   font-family: 'SansArabic';
@@ -306,7 +305,7 @@ html body .app .body {
   border: 2px solid transparent;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-color: #C4D6B0;
+  border-color: #DDDDDD;
 }
 
 .tool-section .tool-container .tool-left .tool-left__textarea:hover {
@@ -339,7 +338,7 @@ html body .app .body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  color: #C4D6B0;
+  color: #DDDDDD;
   list-style: none;
   text-align: left;
   width: 100%;
@@ -364,7 +363,7 @@ html body .app .body {
 }
 
 .tool-section .tool-container .tool-right .tool-list .tool-list__item .tool-item__num {
-  color: #96C5B0;
+  color: #AFCBFF;
 }
 
 .tool-section .tool-container .tool-right .tool-list .tool-list__item .tool-item__text {
@@ -375,6 +374,23 @@ html body .app .body {
 .tool-section .tool-container .tool-right .tool-list .tool-list__item .tool-item__icon {
   width: 48px;
   height: 48px;
+}
+
+.tool-section .tool-container .tool-right .tool-list .tool-list__item .tool-item__btn {
+  border: none;
+  font-size: 24px;
+  font-family: 'SansArabic';
+  border-radius: 10px;
+  padding: 5px 20px;
+  background-color: transparent;
+  border: 2px solid #5C7AFF;
+  color: #DDDDDD;
+}
+
+.tool-section .tool-container .tool-right .tool-list .tool-list__item .tool-item__btn:hover {
+  cursor: pointer;
+  background-color: #5C7AFF;
+  color: #0E1116;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1200px) {
@@ -391,6 +407,7 @@ html body .app .body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
   .tool-section .tool-container .tool-left .tool-left-title {
     -webkit-box-orient: vertical;

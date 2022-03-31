@@ -1,6 +1,7 @@
 # Contaracter :speech_balloon:
-Simple página web contador de palabras y letras. 
+Simple página web contador de palabras y letras.
 
-## Proximas implementaciones
-- [ ] Contador de oraciones
-- [ ] Contador de párrafos
+## Próximas implementaciones
+- [ ] Contador sin espacios
+- [X] Contador de párrafos
+- [X] Botón para limpiar el texto

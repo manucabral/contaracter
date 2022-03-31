@@ -2,13 +2,16 @@ import down from "../assets/down.svg";
 import term from "../assets/term.svg";
 import char from "../assets/char.svg";
 import typing from "../assets/typing.svg";
+import clear from "../assets/clear.svg";
+import paragraph from "../assets/paragraph.svg";
 
 import { useCounter } from "../hooks/useCounter";
 import { useState } from "react";
 
 export default function Tool() {
   const [text, setText] = useState<string>("");
-  const { countWords, countChars, handleText } = useCounter(text, setText);
+  const { countWords, countChars, countParagraphs, handleText, clearText } =
+    useCounter(text, setText);
 
   return (
     <div className="tool-section">
@@ -25,6 +28,7 @@ export default function Tool() {
             className="tool-left__textarea"
             cols={30}
             rows={10}
+            value={text}
             onChange={(e) => handleText(e)}
           ></textarea>
         </div>
@@ -39,6 +43,21 @@ export default function Tool() {
               <img className="tool-item__icon" src={term} alt="term" />
               <h1 className="tool-item__num">{countWords}</h1>
               <h2 className="tool-item__text">Palabras</h2>
+            </li>
+            <li className="tool-list__item">
+              <img
+                className="tool-item__icon"
+                src={paragraph}
+                alt="paragraph"
+              />
+              <h1 className="tool-item__num">{countParagraphs}</h1>
+              <h2 className="tool-item__text">Párrafos</h2>
+            </li>
+            <li className="tool-list__item">
+              <img className="tool-item__icon" src={clear} alt="clear" />
+              <button className="tool-item__btn" onClick={() => clearText()}>
+                Limpiar
+              </button>
             </li>
           </ul>
         </div>
